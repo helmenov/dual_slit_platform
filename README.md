@@ -38,7 +38,7 @@ $$
 \begin{bmatrix}
 x_1\\
 z_1
-\end{bmatrix} = \frac{r_1}{F\tan\theta_1+x^{\prime}_1}\begin{bmatrix}
+\end{bmatrix} = \frac{r_1\tan\theta_1}{x^{\prime}_1\tan\theta_1+F}\begin{bmatrix}
 x^{\prime}_1\\
 F
 \end{bmatrix}
@@ -51,16 +51,16 @@ $$
 
 - 移動しない対象物 $f : Z=f(X)$
 - 移動するプラットフォーム（カメラ，2スリット光）
-  - カメラ $\bold{X_c}=(X_c(t), Z_c(t))$
+  - カメラ $\pmb{X_c}=(X_c(t), Z_c(t))$
   - プラットフォームの回転角 $\theta_c(t)$
 がある．
 
-したがって，カメラ座標系 $\bold{x}=(x,z)$ との間に
+したがって，カメラ座標系 $\pmb{x}=(x,z)$ との間に
 
 $$
 \begin{align}
-\bold{x}(t) &= \bold{R}_p^{-1}(t) (\bold{X}-\bold{X_c}(t))\\
-\bold{R}_p(t) &= R(\theta_c)
+\pmb{x}(t) &= \pmb{R}_p^{-1}(t) (\pmb{X}-\pmb{X_c}(t))\\
+\pmb{R}_p(t) &= \pmb{R}(\theta_c)
 \end{align}
 $$
 
